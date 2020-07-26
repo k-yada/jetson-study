@@ -2,32 +2,31 @@
 
 ## macOS で OpenMP を利用するための準備
 
-  OpenMP は gcc で利用可能です。mac に Xcode をインストールすることで標準的に利用可能な gcc/g++ は clang のラッパーなので、本物の gcc をインストールする必要があります。
+OpenMP は gcc で利用可能です。mac に Xcode をインストールすることで標準的に利用可能な gcc/g++ は clang のラッパーなので、本物の gcc をインストールする必要があります。
 
-  1. 事前準備
+1. 事前準備
 
-    - Xcode のインストール
+   - Xcode のインストール
 
-      Homebrew からパッケージをインストールするときに、コンパイラが必要になるので AppStore から Xcode をインストールしておきます。
+        Homebrew からパッケージをインストールするときに、コンパイラが必要になるので AppStore から Xcode をインストールしておきます。
 
-      Xcode を起動すると、コマンドラインツールをインストールするかどうか聞かれますので、コマンドラインツールもインストールしておきます。
+        Xcode を起動すると、コマンドラインツールをインストールするかどうか聞かれますので、コマンドラインツールもインストールしておきます。
 
-      複数のバージョンの Xcode をインストールしているときには、```xcode-select```で選択することができます。
+        複数のバージョンの Xcode をインストールしているときには、```xcode-select```で選択することができます。
 
+        ```text
+        sudo xcode-select -s /Applications/Xcode.app
+        ```
 
-      ```
-      sudo xcode-select -s /Applications/Xcode.app
-      ```
+   - Homebrew のインストール
 
-    - Homebrew のインストール
+        https://brew.sh を参照して、インストールスクリプトを実行して Homebrew が利用できるようにしてください。
 
-      https://brew.sh を参照して、インストールスクリプトを実行して Homebrew が利用できるようにしてください。
-
-  1. gcc/g++ のインストール
+1. gcc/g++ のインストール
 
     mac で利用可能な gcc/g++ は、Xcode でインストールされている clang のラッパーであり、OpenMP が使えません。OpenMP が使えるように本物の gcc/g++ をインストールします。
 
-    ```
+    ```text
     brew update
     brew install gcc@9
     ln -s /usr/local/bin/gcc-9 /usr/local/bin/gcc
@@ -35,7 +34,7 @@
     rehash
     ```
 
-    ```
+    ```text
     % gcc --version
     gcc (Homebrew GCC 9.3.0) 9.3.0
     Copyright (C) 2019 Free Software Foundation, Inc.
