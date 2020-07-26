@@ -4,23 +4,21 @@
 
 OpenMP は gcc で利用可能です。mac に Xcode をインストールすることで標準的に利用可能な gcc/g++ は clang のラッパーなので、本物の gcc をインストールする必要があります。
 
-1. 事前準備
+1. Xcode のインストール
 
-   - Xcode のインストール
+    Homebrew からパッケージをインストールするときに、コンパイラが必要になるので AppStore から Xcode をインストールしておきます。
 
-        Homebrew からパッケージをインストールするときに、コンパイラが必要になるので AppStore から Xcode をインストールしておきます。
+    Xcode を起動すると、コマンドラインツールをインストールするかどうか聞かれますので、コマンドラインツールもインストールしておきます。
 
-        Xcode を起動すると、コマンドラインツールをインストールするかどうか聞かれますので、コマンドラインツールもインストールしておきます。
+    複数のバージョンの Xcode をインストールしているときには、```xcode-select```で選択することができます。
 
-        複数のバージョンの Xcode をインストールしているときには、```xcode-select```で選択することができます。
+    ```text
+    sudo xcode-select -s /Applications/Xcode.app
+    ```
 
-        ```text
-        sudo xcode-select -s /Applications/Xcode.app
-        ```
+1. Homebrew のインストール
 
-   - Homebrew のインストール
-
-        https://brew.sh を参照して、インストールスクリプトを実行して Homebrew が利用できるようにしてください。
+    https://brew.sh を参照して、インストールスクリプトを実行して Homebrew が利用できるようにしてください。
 
 1. gcc/g++ のインストール
 
