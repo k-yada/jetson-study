@@ -6,9 +6,8 @@
 
 ## pycuda のインストール
 
-    ```text
-    $ pip3 install --user -U pycuda
-    ```
+  ```text
+  $ pip3 install --user -U pycuda
+  ```
 
   ```-U``` は、既にインストールされていて新しいバージョンが存在すればアップグレードされるオプション。
-
