@@ -1,6 +1,6 @@
 # 事前準備
 
-## macOS で OpenMP を利用するための準備
+## macOS での事前準備
 
 OpenMP は gcc で利用可能です。mac に Xcode をインストールすることで標準的に利用可能な gcc/g++ は clang のラッパーなので、本物の gcc をインストールする必要があります。
 
@@ -29,6 +29,7 @@ OpenMP は gcc で利用可能です。mac に Xcode をインストールする
     brew install gcc@9
     ln -s /usr/local/bin/gcc-9 /usr/local/bin/gcc
     ln -s /usr/local/bin/g++-9 /usr/local/bin/g++
+    brew install cmake
     rehash
     ```
 
