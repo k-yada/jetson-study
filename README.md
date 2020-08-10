@@ -6,4 +6,4 @@
 
 - [Jetson Nano にユーザーを作成](11_create_my_account.md)
 - [はじめてのCUDA](12_hello_cuda_world.md)
-- [PyCudaでPythonからCUDAを利用する]（13_hello_pycuda.md)
+- [PyCudaでPythonからCUDAを利用する](13_hello_pycuda.md)
