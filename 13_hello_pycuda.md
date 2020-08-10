@@ -11,3 +11,7 @@
   ```
 
   ```-U``` は、既にインストールされていて新しいバージョンが存在すればアップグレードされるオプション。
+
+## pycuda による GPU プログラミング
+
+<https://github.com/nebosuke/hello_pycuda>
